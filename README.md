@@ -1,0 +1,4 @@
+- TODO
+    - ROR CRUD review
+    - error message
+    - active record using MySQL
