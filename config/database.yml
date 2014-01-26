@@ -8,7 +8,7 @@ development:
   encoding: utf8
   database: rails_crud 
   username: root
-  password: test #mysql 비밀번호
+  password: asc379748 
   host: localhost
   port: 3306
 
