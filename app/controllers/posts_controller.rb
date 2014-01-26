@@ -5,15 +5,20 @@ class PostsController < ApplicationController
 
   #new -> create
   def new
+    @post = Post.new
   end
 
   def create
     @post = Post.new
     @post.title = params[:title]
     @post.body = params[:body]
-    @post.save
 
-    redirect_to "/posts/home"
+    if @post.save
+      redirect_to "/posts/home"
+    else
+      render :new
+    end
+
   end
 
   def show
